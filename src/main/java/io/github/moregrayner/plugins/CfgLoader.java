@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 public class CfgLoader {
     private final Controller plugin;
     private final Chat chat;
-    private final CMDModule cmdModule;
+    private CMDModule cmdModule;
     private static final Logger LOGGER = Logger.getLogger("CFGLOADER");
 
     private static File Folder;
@@ -80,5 +80,9 @@ public class CfgLoader {
         loadMessagesConfig();
         loadBan();
         LOGGER.info("리로드 시작.");
+    }
+
+    public void setCmdModule(CMDModule cmd) {
+        this.cmdModule = cmd;
     }
 }
