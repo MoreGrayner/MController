@@ -5,3 +5,11 @@ api-version: '1.21'
 authors: [ 짱레인 ]
 description: 윈터오브짱레인
 commands:
+  help:
+    usage: ee
+  임시보호:
+    usage: ee
+  chat:
+    usage: ee
+  retry:
+    usage: ee
